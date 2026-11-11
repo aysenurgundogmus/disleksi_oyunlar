@@ -1,4 +1,4 @@
-# Disleksi Deneme Oyunları (Frontend + Backend)
+# Disleksi Oyunları (Frontend + Backend)
 
 Bu proje, statik mini oyunları Python veya Node backend ile çalıştırır.
 
