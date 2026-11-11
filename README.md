@@ -1,1 +1,1 @@
-# disleksi_bili-sel_oyunlar
+# disleksi_oyunlar
