@@ -1,0 +1,14 @@
+{
+  "name": "disleksi-deneme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Eğitsel mini oyunlar için statik servis ve skor/telemetri API'si",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0"
+  }
+}

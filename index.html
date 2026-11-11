@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Disleksi Deneme Oyunları</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        height: 100vh;
+        height: 100dvh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans",
+          "Helvetica Neue", sans-serif;
+        background: radial-gradient(circle at top, #fff6b5 0%, #c7f1ff 45%, #d8ffe1 100%);
+        color: #111;
+        padding: 12px;
+      }
+      .wrap {
+        width: min(900px, 100%);
+        max-height: calc(100dvh - 24px);
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        min-height: 0;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid rgba(0, 0, 0, 0.08);
+        border-radius: 22px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+        padding: 18px;
+      }
+      h1 { margin: 6px 0 0; font-size: clamp(26px, 4vw, 40px); }
+      p { margin: 10px 0 0; opacity: 0.9; }
+      .grid {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        min-height: 0;
+      }
+      a.card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+        padding: 10px;
+        background: #fff;
+        transition: transform 120ms ease, border-color 120ms ease;
+      }
+      a.card:hover { transform: translateY(-1px); border-color: rgba(79, 45, 255, 0.4); }
+      .title { font-weight: 900; font-size: 18px; }
+      .desc { margin-top: 8px; font-size: 14px; opacity: 0.85; }
+      .note { margin-top: 8px; font-size: 12px; opacity: 0.8; }
+      @media (max-width: 680px) {
+        .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); }
+        .wrap { padding: 12px; }
+      }
+      @media (max-height: 600px) {
+        h1 { font-size: 24px; }
+        p { margin-top: 4px; font-size: 13px; }
+        a.card { padding: 7px; }
+        .desc { margin-top: 4px; font-size: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Oyunlar</h1>
+      <p>Python backend ile aynı adresten açılır.</p>
+
+      <section class="grid" aria-label="Oyun listesi">
+        <a class="card" href="/ses-avi-oyunu/">
+          <div class="title">Ses Avı Oyunu</div>
+          <div class="desc">Dinle ve doğru harfi seç.</div>
+        </a>
+        <a class="card" href="/hizli-kelime-kartlari/">
+          <div class="title">Hızlı Kelime Kartları</div>
+          <div class="desc">Hızlı gösterilen kelimeleri ayırt et, skor topla.</div>
+        </a>
+        <a class="card" href="/kafiye-oyunu/">
+          <div class="title">Kafiye Oyunu</div>
+          <div class="desc">Aynı uyakla biten kelimeyi seç.</div>
+        </a>
+        <a class="card" href="/harf-karistirma/">
+          <div class="title">Harf Karıştırma</div>
+          <div class="desc">Karışık harflerden doğru kelimeyi oluştur.</div>
+        </a>
+        <a class="card" href="/hikaye-tamamlama/">
+          <div class="title">Cümle Tamamlama</div>
+          <div class="desc">Cümledeki boşluğu doğru kelimeyle tamamla.</div>
+        </a>
+      </section>
+
+      <div class="note">
+        Skor kaydı API’si: <code>/api/scores</code>
+      </div>
+    </main>
+  </body>
+</html>

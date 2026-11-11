@@ -1,0 +1,52 @@
+[
+  {
+    "sentence": "Küçük kedi ağacın dalına _____.",
+    "correct": "tırmandı",
+    "options": ["tırmandı", "okudu", "pişirdi"]
+  },
+  {
+    "sentence": "Ece sabah kahvaltıda sütünü _____.",
+    "correct": "içti",
+    "options": ["içti", "çizdi", "koştu"]
+  },
+  {
+    "sentence": "Ali bahçede kırmızı topu _____.",
+    "correct": "attı",
+    "options": ["attı", "yıkadı", "okudu"]
+  },
+  {
+    "sentence": "Kuş sabah gökyüzünde neşeyle _____.",
+    "correct": "uçtu",
+    "options": ["uçtu", "yüzdü", "pişirdi"]
+  },
+  {
+    "sentence": "Anne akşam bize çorba _____.",
+    "correct": "pişirdi",
+    "options": ["pişirdi", "okudu", "sürdü"]
+  },
+  {
+    "sentence": "Mert odasında yeni kitabı _____.",
+    "correct": "okudu",
+    "options": ["okudu", "yıkadı", "uçtu"]
+  },
+  {
+    "sentence": "Bebek gece beşiğinde sessizce _____.",
+    "correct": "uyudu",
+    "options": ["uyudu", "çizdi", "yüzdü"]
+  },
+  {
+    "sentence": "Duru güzel resmi renklerle _____.",
+    "correct": "boyadı",
+    "options": ["boyadı", "içti", "koştu"]
+  },
+  {
+    "sentence": "Çocuk oyun sonrası ellerini sabunla _____.",
+    "correct": "yıkadı",
+    "options": ["yıkadı", "okudu", "uçtu"]
+  },
+  {
+    "sentence": "Can parkta arkadaşıyla hızlıca _____.",
+    "correct": "koştu",
+    "options": ["koştu", "pişirdi", "içti"]
+  }
+]

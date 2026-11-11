@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kafiye Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/game-layout.css" />
+    <link rel="stylesheet" href="/score-modal.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Kafiye Oyunu">
+      <header class="header">
+        <a class="back" href="/">← Oyunlar</a>
+        <h1 class="title">Kafiye Oyunu</h1>
+        <p class="subtitle">Aynı uyakla biten kelimeyi seç.</p>
+      </header>
+
+      <section class="panel" aria-label="Oyun alanı">
+        <div class="row">
+          <div class="stat">
+            <span class="label">Skor</span>
+            <strong id="scoreText" class="value">0 / 10</strong>
+          </div>
+            <span id="roundText" class="round">Tur 1 / 10</span>
+        </div>
+
+        <div class="prompt">
+          <div class="promptLabel">Hedef kelime</div>
+          <div id="targetWord" class="targetWord">-</div>
+        </div>
+
+        <div id="options" class="options" role="group" aria-label="Seçenekler"></div>
+        <p id="result" class="result" aria-live="polite"></p>
+
+        <details class="debug">
+          <summary>Tanı</summary>
+          <pre id="debugInfo" class="debugBox">Hazır.</pre>
+        </details>
+      </section>
+    </main>
+
+    <script src="/telemetry.js"></script>
+    <script src="/score-modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

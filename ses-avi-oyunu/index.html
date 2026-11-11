@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ses Avı Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/game-layout.css" />
+    <link rel="stylesheet" href="/score-modal.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Ses Avı Oyunu">
+      <header class="header">
+        <h1 class="title">Ses Avı Oyunu</h1>
+        <p class="subtitle">🔊 Dinle ve doğru harfi seç!</p>
+      </header>
+
+      <section class="panel" aria-label="Oyun alanı">
+        <button id="listenBtn" class="btn btn-listen" type="button">
+          🔊 Sesi Dinle
+        </button>
+
+        <div class="score" aria-label="Skor alanı">
+          <div class="scoreRow">
+            <span class="scoreLabel">Skor</span>
+            <strong id="scoreText" class="scoreValue">0 / 10</strong>
+          </div>
+        </div>
+
+        <div id="options" class="options" role="group" aria-label="Harf seçenekleri"></div>
+
+        <p id="result" class="result" aria-live="polite"></p>
+
+        <details class="debug">
+          <summary>Tanı (ses yoksa)</summary>
+          <pre id="debugInfo" class="debugBox">Hazır.</pre>
+        </details>
+      </section>
+    </main>
+
+    <script src="/telemetry.js"></script>
+    <script src="/score-modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

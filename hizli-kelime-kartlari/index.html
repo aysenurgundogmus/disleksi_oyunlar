@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hızlı Kelime Kartları</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/game-layout.css" />
+    <link rel="stylesheet" href="/score-modal.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Hızlı Kelime Kartları">
+      <header class="header">
+        <a class="back" href="/">← Oyunlar</a>
+        <h1 class="title">Hızlı Kelime Kartları</h1>
+        <p class="subtitle">Kelimeyi gör, sonra doğru olanı seç.</p>
+      </header>
+
+      <section class="panel" aria-label="Oyun alanı">
+        <div class="toolbar">
+          <details class="settings">
+            <summary>Ayarlar</summary>
+            <label class="field">
+              <span class="fieldLabel">Gösterim süresi (ms)</span>
+              <input id="flashMs" type="number" min="150" max="2000" step="50" value="650" />
+            </label>
+          </details>
+          <button id="startBtn" class="btn btn-primary" type="button">Başlat</button>
+          <button id="stopBtn" class="btn" type="button" disabled>Durdur</button>
+        </div>
+
+        <div class="topRow">
+          <div class="stat">
+            <span class="label">Skor</span>
+            <strong id="scoreText" class="value">0 / 0</strong>
+          </div>
+          <div class="stat">
+            <span class="label">Süre</span>
+            <strong id="timeText" class="value">45</strong>
+          </div>
+        </div>
+
+        <div id="card" class="card" aria-label="Kelime kartı">
+          <div id="phaseText" class="phase">Hazır</div>
+          <div id="wordText" class="word">Başlat</div>
+        </div>
+
+        <div id="options" class="options" role="group" aria-label="Seçenekler"></div>
+
+        <p id="result" class="result" aria-live="polite"></p>
+
+        <details class="debug">
+          <summary>Tanı</summary>
+          <pre id="debugInfo" class="debugBox">Hazır.</pre>
+        </details>
+      </section>
+    </main>
+
+    <script src="/telemetry.js"></script>
+    <script src="/score-modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

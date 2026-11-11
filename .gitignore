@@ -1,0 +1,17 @@
+
+# Bağımlılıklar
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Veritabanı ve Yerel Veriler
+data/*.sqlite3
+data/*.sqlite3-journal
+data/*.jsonl
+data/scores.json
+
+# IDE & Sistem
+.vscode/
+.DS_Store

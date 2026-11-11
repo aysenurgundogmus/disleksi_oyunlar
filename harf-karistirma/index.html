@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Harf Karıştırma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/game-layout.css" />
+    <link rel="stylesheet" href="/score-modal.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Harf Karıştırma">
+      <header class="header">
+        <a class="back" href="/">← Oyunlar</a>
+        <h1 class="title">Harf Karıştırma</h1>
+        <p class="subtitle">Karışık harflerden doğru kelimeyi oluştur.</p>
+      </header>
+
+      <section class="panel" aria-label="Oyun alanı">
+        <div class="row">
+          <div class="stat">
+            <span class="label">Skor</span>
+            <strong id="scoreText" class="value">0 / 10</strong>
+          </div>
+          <span id="roundText" class="round">Tur 1 / 10</span>
+        </div>
+
+        <div class="prompt">
+          <div class="promptLabel">Karışık harfler</div>
+          <div id="letterPool" class="tileRow" aria-label="Kullanılabilir harfler"></div>
+        </div>
+
+        <div class="answerArea">
+          <div class="promptLabel">Cevabın</div>
+          <div id="answerTiles" class="tileRow answerTiles" aria-label="Seçtiğin harfler"></div>
+        </div>
+        <button id="checkBtn" class="btn btn-save" type="button">Kontrol Et</button>
+
+        <p id="result" class="result" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/telemetry.js"></script>
+    <script src="/score-modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

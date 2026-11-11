@@ -1,0 +1,89 @@
+.score-modal {
+  width: min(420px, calc(100vw - 32px));
+  max-height: min(90dvh, 520px);
+  overflow: auto;
+  padding: 24px;
+  border: 0;
+  border-radius: 22px;
+  color: #111;
+  background: #fff;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font: inherit;
+}
+
+.score-modal::backdrop {
+  background: rgba(15, 23, 42, 0.58);
+  backdrop-filter: blur(3px);
+}
+
+.score-modal h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.score-modal__score {
+  margin: 12px 0 20px;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.score-modal__label {
+  display: grid;
+  gap: 8px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.score-modal__name {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 2px solid rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  font: inherit;
+}
+
+.score-modal__name:focus-visible,
+.score-modal__button:focus-visible {
+  outline: 3px solid #4f2dff;
+  outline-offset: 2px;
+}
+
+.score-modal__status {
+  min-height: 22px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.score-modal__status.is-error {
+  color: #b42318;
+}
+
+.score-modal__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.score-modal__button {
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: #eee;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.score-modal__button--save {
+  color: #fff;
+  background: #16803c;
+}
+
+.score-modal__button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
